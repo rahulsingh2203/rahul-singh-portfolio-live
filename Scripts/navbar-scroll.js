@@ -9,3 +9,8 @@ function scrollFunction() {
         document.querySelector(".navbar").style.height = "6rem";
     }
 };
+
+
+const footerCopyright = document.getElementById("footer-copyright");
+let date = new Date().getFullYear();
+footerCopyright.innerHTML = "@RahulSinghMeraNaam 1999-" + date;
