@@ -2,7 +2,7 @@ let skillSlide = document.getElementsByClassName("section-2-container-subcontain
 let numss = 3;
 let ii = 0;
 function skillNext() {
-    if (ii < 2) {
+    if (ii < 3) {
         skillSlide[ii].classList.remove("active-skill");
         skillSlide[ii + 1].classList.add("active-skill");
         ii++;
@@ -22,7 +22,7 @@ function skillPrev() {
     }
     else {
         skillSlide[ii].classList.remove("active-skill");
-        skillSlide[ii + 2].classList.add("active-skill");
-        ii = 2;
+        skillSlide[ii + 3].classList.add("active-skill");
+        ii = 3;
     }
 }

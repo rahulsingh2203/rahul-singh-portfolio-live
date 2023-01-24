@@ -23,10 +23,10 @@ function navbar() {
 
 function togglebtn() {
     let x = document.getElementById("togglebtn");
-    if (x.innerHTML === "ON") {
-        x.innerHTML = "OFF";
+    if (x.innerHTML === "LIGHT") {
+        x.innerHTML = "DARK";
     } else {
-        x.innerHTML = "ON";
+        x.innerHTML = "LIGHT";
     }
 }
 function footers(){

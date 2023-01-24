@@ -8,11 +8,13 @@
 body {
     background: #17181C;
     font-family: 'Inter', sans-serif;
+    transition: 0.6s ease;
 }
 
 .light-body {
     background: #E5FAFC;
     color: #17181C;
+    transition: 0.6s ease;
 }
 
 header {
