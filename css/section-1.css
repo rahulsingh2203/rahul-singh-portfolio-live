@@ -1,0 +1,160 @@
+.section-1 {
+    width: 100%;
+    position: relative;
+    color: #E5FAFC;
+    height: 40rem;
+}
+
+.section-1-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section-1-container-subcontainer-1 {
+    width: 40%;
+}
+
+.section-1-container-subcontainer-1 img {
+
+    z-index: 2;
+    width: 35rem;
+
+}
+
+.section-1-container-subcontainer-2 {
+
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#span-name {
+    margin-bottom: 2rem;
+    font-size: 6vw;
+    animation-name: name;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.light-span-name{
+    animation-name: lightname !important;
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important;
+}
+
+#span-rahul {
+    font-size: 8vw;
+    color: #E5FAFC;
+    animation-name: rahul;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.light-span-rahul{
+    animation-name: lightrahul !important;
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important;
+}
+
+@keyframes name {
+    0% {
+        color: #F9AC66;
+    }
+
+    50% {
+        color: #E5FAFC;
+    }
+
+    100% {
+        color: #F9AC66;
+    }
+}
+@keyframes lightname {
+    0% {
+        color: #F9AC66;
+    }
+
+    50% {
+        color: #17181C;
+    }
+
+    100% {
+        color: #F9AC66;
+    }
+}
+
+@keyframes rahul {
+    0% {
+        color: #E5FAFC;
+    }
+
+    50% {
+        color: #F9AC66;
+    }
+
+    100% {
+        color: #E5FAFC;
+    }
+}
+@keyframes lightrahul {
+    0% {
+        color: #17181C;
+    }
+
+    50% {
+        color: #F9AC66;
+    }
+
+    100% {
+        color: #17181C;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section-1 {
+        height: 45rem;
+    }
+
+    .section-1-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .section-1-container-subcontainer-1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-1-container-subcontainer-1 img {
+        width: 23rem;
+    }
+
+    .section-1-container-subcontainer-2 {
+        margin: 5rem 0rem 0rem 0rem;
+        width: 100%;
+
+    }
+
+    .section-1-container-subcontainer-2 span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    #span-rahul {
+        font-size: 10vw;
+        display: block;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 3vw;
+    }
+}

@@ -1,0 +1,359 @@
+.section-2 {
+    width: 100%;
+    height: 40rem;
+}
+
+.section-2-container {
+    margin: 5rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-2-container-subcontainer-1 {
+    position: relative;
+    width: 40%;
+    height: 40rem;
+    background-color: #E5FAFC;
+    border-radius: 2rem;
+}
+.light-section-2-container-subcontainer-1{
+    background-color: #17181C ;
+    color: #E5FAFC;
+}
+.light-about-us{
+    color: #E5FAFC;
+}
+
+.section-2-container-subcontainer-1-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.section-2-container-subcontainer-1-slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.section-2-container-subcontainer-1-prev-btn {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 20%;
+    border: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.section-2-container-subcontainer-1-prev-btn:hover {
+    background-color: black;
+    opacity: 0.1;
+
+}
+
+.section-2-container-subcontainer-1-next-btn:hover {
+    background-color: black;
+    opacity: 0.1;
+}
+
+.section-2-container-subcontainer-1-next-btn {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    width: 20%;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+.section-2-container-subcontainer-1-next-btn > span{
+    font-size: 2vw;
+    color: black;
+    animation: nxt 2s infinite;
+}
+@keyframes nxt {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.active-slide-about-us {
+    display: block;
+}
+
+.data-about-us {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-p-about-us {
+    font-size: 3vw;
+    letter-spacing: 2px;
+    padding: 1rem;
+    width: 95%;
+}
+
+.lower-p-about-us {
+    width: 95%;
+    padding: 1rem;
+    font-size: 2vw;
+    letter-spacing: 2px;
+}
+
+
+.section-2-container-subcontainer-2 {
+    width: 40%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-container-subcontainer-2-upper {
+    width: 80%;
+    height: 30%;
+    background-color: #E5FAFC;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.light-section-2-container-subcontainer-2-upper{
+    background-color: #17181C;
+    color: #E5FAFC;
+}
+
+.toggle-text {
+    width: 90%;
+    padding: 2vh;
+    letter-spacing: 0.5px;
+}
+
+.toggle-text-b {
+    font-size: 1.5vw;
+}
+
+.toggle-button {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-button>p {
+    padding: 1vh;
+}
+
+.toggle-button>button {
+    height: 5vh;
+    width: 4vw;
+    margin: 0rem 2vh;
+    border: none;
+    border-radius: 21%;
+    background-color: #D10000;
+    color: #E5FAFC;
+}
+
+.section-2-container-subcontainer-2-lower {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    background-color: #E5FAFC;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-container-subcontainer-2-lower-skill-data {
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #E5FAFC;
+}
+
+.skill-data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skill-sets {
+    margin: 1rem 1rem;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.skill-items {
+    width: 10rem;
+    margin: 0.3rem 0rem;
+    font-size: 1.5vw;
+}
+
+.active-skill {
+    display: block !important;
+}
+
+#skill-btn-prev {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    border: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background: transparent;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 3vw;
+}
+
+
+#skill-btn-prev:hover {
+    background-color: black;
+    opacity: 0.1;
+}
+#skill-btn-prev>span {
+    top: 4%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#skill-btn-next {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    right: 0;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background: transparent;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 3vw;
+}
+
+#skill-btn-next>span {
+    top: 4%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#skill-btn-next:hover {
+    background-color: black;
+    opacity: 0.1;
+}
+
+.bg-1 {
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, #ff4b1f, #ff9068);
+}
+
+.bg-2 {
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, #cd2c3f, #fc035a);
+}
+
+.bg-3 {
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, #060f4c, #004b8f);
+}
+
+@media only screen and (max-width: 800px) {
+    .section-2 {
+        height: 70rem;
+    }
+
+    .section-2-container {
+        margin: 2rem 0rem;
+        flex-direction: column;
+    }
+
+    .section-2-container-subcontainer-1 {
+        width: 90%;
+        height: 30rem;
+    }
+    .section-2-container-subcontainer-1-next-btn > span{
+        font-size: 5vw;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section-2-container-subcontainer-2 {
+        width: 90%;
+        margin: 2rem 0rem;
+        justify-content: center;
+    }
+
+    .section-2-container-subcontainer-2-upper {
+        width: 100%;
+        height: 40%;
+        margin: 2rem 0rem;
+    }
+
+    .section-2-container-subcontainer-2-lower {
+        width: 100%;
+        height: 60%;
+        margin: 2rem 0rem;
+    }
+
+    .toggle-text-b {
+        font-size: 5.5vw;
+    }
+
+    .toggle-button>button {
+        height: 4vh;
+        width: 15vw;
+    }
+
+    .upper-p-about-us {
+        font-size: 7vw;
+    }
+
+    .lower-p-about-us {
+        font-size: 5vw;
+    }
+    #skill-sets{
+        font-size: 5vw;
+    }
+    .skill-items{
+        font-size: 3.5vw;
+    }
+}
